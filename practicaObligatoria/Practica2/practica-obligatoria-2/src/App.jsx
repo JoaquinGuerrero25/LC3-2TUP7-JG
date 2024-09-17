@@ -1,5 +1,6 @@
 import './App.css'
 import Table from './components/Table';
+import { Login } from './components/Login';
 
 function App() {
   const netIncomes = [
@@ -12,8 +13,9 @@ function App() {
 
   return (
     <>
-      <Table netIncomes={netIncomes} />
-      <p>Promedio de ingreso neto: {averageIncome.toFixed(2)}</p>
+      <Login />
+      {/* <Table netIncomes={netIncomes} />
+      <p>Promedio de ingreso neto: {averageIncome.toFixed(2)}</p> */}
     </>
 
   )
